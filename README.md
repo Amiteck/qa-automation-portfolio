@@ -5,6 +5,7 @@ Static landing page for the **Playwright QA Automation Portfolio Project**.
 ## What's new in v3
 
 - Paddle-ready public Terms of Service
+
 - Privacy Policy
 - Refund Policy
 - customer support email: `qaautomationprojects@gmail.com`
