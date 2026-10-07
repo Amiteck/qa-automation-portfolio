@@ -5,7 +5,6 @@ Static landing page for the **Playwright QA Automation Portfolio Project**.
 ## What's new in v3
 
 - Paddle-ready public Terms of Service
-
 - Privacy Policy
 - Refund Policy
 - customer support email: `qaautomationprojects@gmail.com`
@@ -51,3 +50,20 @@ The same prices should be configured consistently in the Paddle catalog/discount
 ## Contact
 
 qaautomationprojects@gmail.com
+
+
+## Paddle sandbox checkout
+
+An unlinked test page is included at:
+
+```text
+/sandbox-checkout.html
+```
+
+After GitHub Pages deploys, open:
+
+```text
+https://YOUR-USERNAME.github.io/qa-automation-portfolio/sandbox-checkout.html
+```
+
+The page uses Paddle Sandbox only and opens the one-time $59 price. It is marked `noindex` and is not linked from the public landing page. Remove the sandbox page and sandbox token before the final live launch.

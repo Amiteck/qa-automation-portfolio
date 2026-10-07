@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071429" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Private sandbox checkout test page for the Playwright QA Automation Portfolio Project." />
+  <title>Sandbox Checkout · QA Automation Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js" defer></script>
+  <script src="sandbox-checkout.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="index.html" aria-label="QA Automation Portfolio home">
+        <span class="brand-mark">QA</span>
+        <span>QA Automation Portfolio</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="legal-main">
+    <div class="shell">
+      <article class="legal-card sandbox-card">
+        <p class="eyebrow">Paddle Sandbox</p>
+        <h1>Checkout test</h1>
+        <p class="legal-intro">
+          Test the $59 one-time checkout for the Playwright QA Automation Portfolio Project.
+          This page uses Paddle Sandbox only. No real payment is charged.
+        </p>
+
+        <section>
+          <h2>Test product</h2>
+          <div class="sandbox-product-row">
+            <div>
+              <strong>Playwright QA Automation Portfolio Project</strong>
+              <p>One-time purchase · Quantity 1</p>
+            </div>
+            <strong class="sandbox-price">$59</strong>
+          </div>
+        </section>
+
+        <section>
+          <h2>Open checkout</h2>
+          <p>
+            Click the button below. Paddle should open its sandbox overlay on top of this page.
+          </p>
+          <button id="sandbox-buy" class="button primary sandbox-buy" type="button" disabled>
+            Loading Paddle…
+          </button>
+          <p id="sandbox-status" class="sandbox-status" role="status" aria-live="polite">
+            Initializing sandbox checkout…
+          </p>
+        </section>
+
+        <section>
+          <h2>Important</h2>
+          <p>
+            This page is intentionally not linked from the public landing page and is marked
+            <code>noindex</code>. It exists only for checkout integration testing.
+          </p>
+          <p><a href="index.html">Return to the public landing page</a></p>
+        </section>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
