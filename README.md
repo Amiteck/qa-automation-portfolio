@@ -1,73 +1,52 @@
-# QA Automation Portfolio — GitHub Pages Landing Page
+# QA Automation Portfolio — GitHub Pages v3
 
-Static landing page for **Playwright QA Automation Portfolio Project**.
+Static landing page for the **Playwright QA Automation Portfolio Project**.
 
-No build step, framework, package manager, or external dependency is required.
+## What's new in v3
+
+- Paddle-ready public Terms of Service
+- Privacy Policy
+- Refund Policy
+- customer support email: `qaautomationprojects@gmail.com`
+- footer legal/contact navigation
+- explicit $39 launch / $59 regular pricing
+- mobile-specific hero summary that hides the text-heavy desktop artwork on phones
 
 ## Files
 
 ```text
 index.html
 styles.css
+terms.html
+privacy.html
+refunds.html
 .nojekyll
 assets/
-  favicon.svg
-  hero.webp
-  roadmap.webp
-  included.webp
-  structure.webp
-  examples.webp
-  reports.webp
-  ci.webp
-  portfolio.webp
-  audience.webp
 ```
 
 ## Publish with GitHub Pages
 
-1. Create a new **public** GitHub repository, for example:
+1. Upload the contents of this folder to your repository root.
+2. Commit to `main`.
+3. Open **Settings → Pages**.
+4. Choose **Deploy from a branch**.
+5. Select **main** and **/(root)**.
+6. Save.
+7. Wait for the Pages deployment to become green in **Actions**.
+8. Hard-refresh the published site (`Ctrl + F5`) if cached CSS is still visible.
 
-   ```text
-   qa-automation-portfolio
-   ```
+## Paddle verification checklist
 
-2. Upload everything from this folder to the root of the repository.
+Before submitting the live account review, verify the public site shows:
 
-3. Commit/push the files to the `main` branch.
+- Terms of Service
+- Privacy Policy
+- Refund Policy
+- contact email
+- $39 launch price and $59 regular price
 
-4. In GitHub open:
+The same prices should be configured consistently in the Paddle catalog/discount setup.
 
-   ```text
-   Settings → Pages
-   ```
+## Contact
 
-5. Under **Build and deployment**, choose:
-
-   ```text
-   Source: Deploy from a branch
-   Branch: main
-   Folder: / (root)
-   ```
-
-6. Save and wait for GitHub Pages to publish the site.
-
-Your URL will normally look like:
-
-```text
-https://YOUR-USERNAME.github.io/qa-automation-portfolio/
-```
-
-Use that published URL in Lemon Squeezy's **Website URL** field.
-
-## Later: add the purchase link
-
-The current page intentionally says **Launching soon** because the Lemon Squeezy storefront is not active yet.
-
-After the store is approved, replace the final launch status with your Lemon Squeezy checkout/product link. No other site changes are required for seller verification.
-
-## Notes
-
-- The page uses local assets only.
-- There are no analytics or cookies.
-- There is no JavaScript dependency.
-- All product visuals are stored under `assets/`.
+qaautomationprojects@gmail.com

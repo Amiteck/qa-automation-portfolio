@@ -330,3 +330,141 @@ h1 span { color: var(--yellow); }
   html { scroll-behavior: auto; }
   .button { transition: none; }
 }
+
+
+/* v3: Paddle-ready contact/legal pages and mobile hero */
+.mobile-hero-summary { display: none; }
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, .7fr);
+  gap: 36px;
+  align-items: center;
+}
+.contact-section .section-heading { margin-bottom: 0; }
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: linear-gradient(135deg, rgba(14, 48, 96, .94), rgba(9, 25, 55, .94));
+  border: 1px solid rgba(36, 201, 255, .38);
+  box-shadow: var(--shadow), 0 0 44px rgba(36, 201, 255, .08);
+}
+.contact-card:hover { border-color: rgba(36, 201, 255, .72); }
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #05111f;
+  background: linear-gradient(135deg, var(--blue), #61e8ff);
+  font-weight: 1000;
+  font-size: 22px;
+}
+.contact-card small { display: block; color: #8fa5c8; margin-bottom: 2px; }
+.contact-card strong { font-size: 18px; overflow-wrap: anywhere; }
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.footer-links { display: flex; flex-wrap: wrap; gap: 14px 20px; }
+.footer-links a { color: #c8d6ed; text-decoration: none; font-size: 13px; font-weight: 800; }
+.footer-links a:hover { color: white; }
+
+.legal-main { padding-block: 70px 90px; }
+.legal-card {
+  max-width: 900px;
+  padding: clamp(26px, 5vw, 54px);
+  border-radius: 28px;
+  background: rgba(8, 22, 47, .88);
+  border: 1px solid rgba(92, 176, 255, .24);
+  box-shadow: var(--shadow);
+}
+.legal-card h1 {
+  font-size: clamp(42px, 7vw, 68px);
+  margin-bottom: 10px;
+}
+.legal-updated { color: #8fa5c8; font-size: 14px; margin-bottom: 26px; }
+.legal-intro { color: #d5deef; font-size: 19px; max-width: 760px; }
+.legal-card section { padding-top: 28px; border-top: 1px solid rgba(120,181,255,.14); margin-top: 28px; }
+.legal-card section h2 { font-size: 25px; margin-bottom: 10px; }
+.legal-card section p { color: #bdc9de; }
+.legal-card a { color: #6bdcff; }
+
+@media (max-width: 960px) {
+  .contact-section { grid-template-columns: 1fr; }
+  .contact-card { max-width: 600px; }
+  .legal-nav { display: flex; }
+}
+
+@media (max-width: 720px) {
+  .hero-media-desktop { display: none; }
+  .mobile-hero-summary {
+    display: block;
+    width: 100%;
+    padding: 24px 18px 20px;
+    border-radius: 24px;
+    text-align: center;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(36, 201, 255, .15), transparent 16rem),
+      linear-gradient(145deg, rgba(11, 38, 80, .98), rgba(8, 19, 43, .98));
+    border: 1px solid rgba(56, 188, 255, .38);
+    box-shadow: var(--shadow), 0 0 44px rgba(36, 201, 255, .10);
+  }
+  .mobile-summary-main {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .mobile-summary-number {
+    color: var(--yellow);
+    font-size: 52px;
+    line-height: 1;
+    font-weight: 1000;
+    letter-spacing: -.05em;
+  }
+  .mobile-summary-label {
+    max-width: 150px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.05;
+    font-weight: 900;
+  }
+  .mobile-hero-summary p {
+    margin: 14px 0 18px;
+    color: #b8c5dd;
+    font-size: 15px;
+  }
+  .mobile-summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .mobile-summary-grid span {
+    padding: 9px 8px;
+    border-radius: 11px;
+    background: rgba(20, 55, 104, .72);
+    border: 1px solid rgba(78, 183, 255, .25);
+    color: #e1edff;
+    font-size: 13px;
+    font-weight: 850;
+  }
+  .footer-top { flex-direction: column; }
+  .footer-links { gap: 10px 16px; }
+  .contact-card { padding: 18px; }
+  .contact-card strong { font-size: 15px; }
+  .legal-main { padding-block: 36px 60px; }
+  .legal-card { padding: 24px 18px; border-radius: 20px; }
+  .legal-card h1 { font-size: 42px; }
+  .legal-card section h2 { font-size: 22px; }
+  .legal-nav { display: none; }
+}
