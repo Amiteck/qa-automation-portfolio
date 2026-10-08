@@ -499,3 +499,28 @@ h1 span { color: var(--yellow); }
   .sandbox-product-row { align-items: flex-start; }
   .sandbox-price { font-size: 25px; }
 }
+
+/* v5: secure sandbox fulfillment */
+.fulfillment-status-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 42px;
+}
+.fulfillment-indicator {
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+  border-radius: 999px;
+  background: #ffd24a;
+  box-shadow: 0 0 18px rgba(255, 210, 74, .55);
+}
+.fulfillment-indicator[data-state="ready"] {
+  background: #43e58a;
+  box-shadow: 0 0 18px rgba(67, 229, 138, .55);
+}
+.fulfillment-indicator[data-state="error"] {
+  background: #ff6b78;
+  box-shadow: 0 0 18px rgba(255, 107, 120, .45);
+}
+.fulfillment-download { margin-top: 18px; }

@@ -67,3 +67,19 @@ https://YOUR-USERNAME.github.io/qa-automation-portfolio/sandbox-checkout.html
 ```
 
 The page uses Paddle Sandbox only and opens the one-time $59 price. It is marked `noindex` and is not linked from the public landing page. Remove the sandbox page and sandbox token before the final live launch.
+
+## Sandbox fulfillment test (v5)
+
+The unlinked sandbox flow now exercises fulfillment as well as checkout:
+
+```text
+sandbox-checkout.html
+→ Paddle sandbox checkout
+→ transaction.completed webhook
+→ Cloudflare Worker verifies Paddle-Signature
+→ private R2 access record is created
+→ sandbox-success.html waits for authorization
+→ Worker streams the private v1.0.1 ZIP from R2
+```
+
+The public landing page remains unchanged.
