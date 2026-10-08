@@ -83,3 +83,8 @@ sandbox-checkout.html
 ```
 
 The public landing page remains unchanged.
+
+
+## v6 purchase recovery
+
+`recover.html` lets a buyer recover a private download link using the purchase email and Paddle invoice number from their receipt. The Cloudflare Worker verifies the purchase against Paddle before issuing a fresh token.

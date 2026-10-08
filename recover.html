@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071429" />
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Recover access to your Playwright QA Automation Portfolio Project download." />
+  <title>Recover Download · QA Automation Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="index.html" aria-label="QA Automation Portfolio home">
+        <span class="brand-mark">QA</span>
+        <span>QA Automation Portfolio</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="mailto:qaautomationprojects@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal-main shell">
+    <article class="legal-card recovery-card">
+      <p class="eyebrow">Purchase recovery</p>
+      <h1>Recover your download</h1>
+      <p class="legal-intro">
+        Lost the private download link? Enter the same email address used at Paddle checkout
+        and the invoice number from your Paddle receipt. If the completed purchase matches,
+        a fresh private download link will be created.
+      </p>
+
+      <form id="recovery-form" class="recovery-form" novalidate>
+        <label>
+          <span>Purchase email</span>
+          <input id="recovery-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+        </label>
+
+        <label>
+          <span>Paddle invoice number</span>
+          <input id="recovery-invoice" name="invoice" type="text" autocomplete="off" required placeholder="e.g. 135800-10001" />
+        </label>
+
+        <button id="recovery-submit" class="button primary" type="submit">Recover download</button>
+      </form>
+
+      <div id="recovery-message" class="recovery-message" role="status" aria-live="polite"></div>
+      <a id="recovery-download" class="button secondary recovery-download" href="#" hidden>Download project ZIP</a>
+
+      <div class="recovery-help">
+        <h2>Where do I find the invoice number?</h2>
+        <p>
+          Paddle sends a receipt after a completed purchase and provides billing history through
+          its customer portal. Check that receipt or invoice for the invoice number.
+        </p>
+        <p>
+          Still stuck? Contact <a href="mailto:qaautomationprojects@gmail.com">qaautomationprojects@gmail.com</a>.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-top">
+        <p><strong>QA Automation Portfolio</strong> · Independent self-paced engineering project.</p>
+        <nav class="footer-links" aria-label="Legal and contact links">
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="refunds.html">Refund Policy</a>
+          <a href="mailto:qaautomationprojects@gmail.com">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="recover.js" defer></script>
+</body>
+</html>

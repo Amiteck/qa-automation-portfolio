@@ -524,3 +524,42 @@ h1 span { color: var(--yellow); }
   box-shadow: 0 0 18px rgba(255, 107, 120, .45);
 }
 .fulfillment-download { margin-top: 18px; }
+
+
+/* v6: purchase recovery */
+.recovery-card { max-width: 780px; }
+.recovery-form {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+.recovery-form label { display: grid; gap: 8px; }
+.recovery-form label > span { color: #dce9ff; font-weight: 850; }
+.recovery-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(92, 178, 255, .3);
+  background: rgba(8, 26, 57, .9);
+  color: #fff;
+  font: inherit;
+  outline: none;
+}
+.recovery-form input:focus {
+  border-color: rgba(69, 203, 255, .8);
+  box-shadow: 0 0 0 3px rgba(49, 191, 255, .12);
+}
+.recovery-form button { justify-self: start; border: 0; font: inherit; }
+.recovery-form button:disabled { opacity: .62; cursor: wait; }
+.recovery-message { min-height: 28px; margin-top: 18px; color: #a9b9d2; }
+.recovery-success { color: #69e6a2; }
+.recovery-error { color: #ff9a9a; }
+.recovery-download { margin-top: 8px; width: fit-content; }
+.recovery-help {
+  margin-top: 34px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(134, 174, 230, .16);
+}
+.recovery-help h2 { margin: 0 0 10px; font-size: 22px; }
+.recovery-help p { color: #a9b9d2; }
+.recovery-help a { color: #5fd7ff; }
