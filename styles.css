@@ -563,3 +563,27 @@ h1 span { color: var(--yellow); }
 .recovery-help h2 { margin: 0 0 10px; font-size: 22px; }
 .recovery-help p { color: #a9b9d2; }
 .recovery-help a { color: #5fd7ff; }
+
+
+/* v8: production Paddle checkout */
+button.button {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+button.button:disabled {
+  cursor: wait;
+  opacity: .68;
+  transform: none;
+}
+.price-buy {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+.checkout-note {
+  grid-column: 1 / -1;
+  color: #8fa4c4;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.45;
+}

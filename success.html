@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071429" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="no-referrer" />
+  <meta
+    name="description"
+    content="Purchase confirmation and private download for the Playwright QA Automation Portfolio Project."
+  />
+  <title>Purchase complete · QA Automation Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="paddle-config.js" defer></script>
+  <script src="success.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="index.html" aria-label="QA Automation Portfolio home">
+        <span class="brand-mark">QA</span>
+        <span>QA Automation Portfolio</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="legal-main">
+    <div class="shell">
+      <article class="legal-card sandbox-card">
+        <p class="eyebrow">Purchase complete</p>
+        <h1>Preparing your private download</h1>
+        <p class="legal-intro">
+          Paddle has accepted your payment. We are waiting for the signed purchase
+          confirmation before activating the download.
+        </p>
+
+        <section>
+          <h2>Download status</h2>
+          <div class="fulfillment-status-row">
+            <span
+              id="fulfillment-indicator"
+              class="fulfillment-indicator"
+              aria-hidden="true"
+            ></span>
+            <p
+              id="fulfillment-status"
+              class="sandbox-status"
+              role="status"
+              aria-live="polite"
+            >
+              Waiting for purchase confirmation…
+            </p>
+          </div>
+
+          <a
+            id="download-product"
+            class="button primary fulfillment-download"
+            href="#"
+            hidden
+          >
+            Download project ZIP
+          </a>
+        </section>
+
+        <section>
+          <h2>Need the download later?</h2>
+          <p>
+            Keep your Paddle receipt. You can recover a fresh private download
+            link later using your purchase email and invoice number.
+          </p>
+          <p><a href="recover.html">Recover a previous purchase</a></p>
+        </section>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

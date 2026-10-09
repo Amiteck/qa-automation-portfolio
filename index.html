@@ -8,6 +8,9 @@
   <title>Playwright QA Automation Portfolio Project</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js" defer></script>
+  <script src="paddle-config.js" defer></script>
+  <script src="checkout.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -43,8 +46,10 @@
           <span>CI</span>
         </div>
         <div class="hero-actions">
-          <a class="button primary" href="#roadmap">See the roadmap</a>
-          <a class="button secondary" href="#included">What you get</a>
+          <button class="button primary" type="button" data-paddle-buy disabled>
+            Loading checkout…
+          </button>
+          <a class="button secondary" href="#roadmap">See the roadmap</a>
         </div>
         <p class="microcopy">Self-paced · One-time purchase · Downloadable project · No subscription</p>
       </div>
@@ -201,7 +206,13 @@
       <div class="price-card">
         <div><span>Launch price</span><strong>$39</strong></div>
         <div><span>Regular price</span><strong>$59</strong></div>
-        <span class="status-pill">Launch offer: $39 · Regular price: $59</span>
+        <span class="status-pill">Launch price: $39 · Regular price: $59</span>
+        <button class="button primary price-buy" type="button" data-paddle-buy disabled>
+          Loading checkout…
+        </button>
+        <small class="checkout-note">
+          Secure checkout by Paddle · One-time purchase · No subscription
+        </small>
       </div>
     </section>
   </main>
