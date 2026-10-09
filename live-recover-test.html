@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071429" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Private live recovery verification page for the Playwright QA Automation Portfolio Project." />
+  <title>Live Recovery Test · QA Automation Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="index.html" aria-label="QA Automation Portfolio home">
+        <span class="brand-mark">QA</span>
+        <span>QA Automation Portfolio</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="legal-main shell">
+    <article class="legal-card recovery-card">
+      <p class="eyebrow">Paddle Live · Private verification</p>
+      <h1>Test live download recovery</h1>
+      <p class="legal-intro">
+        Enter the email used for the real Paddle purchase and the invoice number from its
+        Paddle receipt. The live Worker must verify both before issuing a fresh link.
+      </p>
+
+      <form id="recovery-form" class="recovery-form" novalidate>
+        <label>
+          <span>Purchase email</span>
+          <input id="recovery-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+        </label>
+
+        <label>
+          <span>Paddle invoice number</span>
+          <input id="recovery-invoice" name="invoice" type="text" autocomplete="off" required placeholder="Paddle invoice number" />
+        </label>
+
+        <button id="recovery-submit" class="button primary" type="submit">Recover download</button>
+      </form>
+
+      <div id="recovery-message" class="recovery-message" role="status" aria-live="polite"></div>
+      <a id="recovery-download" class="button secondary recovery-download" href="#" hidden>Download project ZIP</a>
+    </article>
+  </main>
+
+  <script src="live-recover-test.js" defer></script>
+</body>
+</html>

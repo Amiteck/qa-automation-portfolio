@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071429" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Private live checkout verification page for the Playwright QA Automation Portfolio Project." />
+  <title>Live Checkout Test · QA Automation Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js" defer></script>
+  <script src="live-checkout.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="index.html" aria-label="QA Automation Portfolio home">
+        <span class="brand-mark">QA</span>
+        <span>QA Automation Portfolio</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="legal-main">
+    <div class="shell">
+      <article class="legal-card sandbox-card">
+        <p class="eyebrow">Paddle Live · Private verification</p>
+        <h1>Real $59 purchase test</h1>
+        <p class="legal-intro">
+          This page opens the real Paddle Live checkout for the Playwright QA Automation
+          Portfolio Project. A real payment will be charged.
+        </p>
+
+        <section>
+          <h2>Live product</h2>
+          <div class="sandbox-product-row">
+            <div>
+              <strong>Playwright QA Automation Portfolio Project</strong>
+              <p>One-time purchase · Quantity 1</p>
+            </div>
+            <strong class="sandbox-price">$59</strong>
+          </div>
+        </section>
+
+        <section>
+          <h2>Open live checkout</h2>
+          <p>
+            Use this page only for the first controlled production purchase test.
+          </p>
+          <button id="live-buy" class="button primary sandbox-buy" type="button" disabled>
+            Loading Paddle…
+          </button>
+          <p id="live-status" class="sandbox-status" role="status" aria-live="polite">
+            Initializing live checkout…
+          </p>
+        </section>
+
+        <section>
+          <h2>Important</h2>
+          <p>
+            This page is intentionally unlinked and marked <code>noindex</code>.
+            It is not the public sales checkout.
+          </p>
+          <p><a href="index.html">Return to the public landing page</a></p>
+        </section>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
